@@ -33,7 +33,7 @@ var fight = function(enemyName) {
         // remove player's health by subtracting the amount set in the enemyAttack variable
         playerHealth = playerHealth - enemyAttack;
         console.log(
-            enemyName + "attacked " + playerName + ". " + playerName + " now has " + playerHealth + " health remaining."
+            enemyName + " attacked " + playerName + ". " + playerName + " now has " + playerHealth + " health remaining."
         );
 
         // check player's health
@@ -66,6 +66,6 @@ var fight = function(enemyName) {
     };
 
     // run fight function to start game
-    for(var i =0; i < enemyNames.length, i++) {
+    for(var i = 0; i < enemyNames.length; i++) {
         fight(enemyNames[i]);
     }
